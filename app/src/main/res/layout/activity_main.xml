@@ -11,7 +11,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:background="@color/blueStatus"
         android:minHeight="?attr/actionBarSize"
         app:navigationIcon="?attr/homeAsUpIndicator"
         app:theme="@style/Theme.AppCompat.NoActionBar">
@@ -20,14 +20,12 @@
 
 
     <LinearLayout
-        android:id="@+id/ll_navigation"
         android:layout_width="match_parent"
         android:layout_height="46dp"
         android:background="#DFDFDF"
         android:orientation="horizontal">
 
         <LinearLayout
-            android:id="@+id/ll_choose"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -72,7 +70,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:openDrawer="start">
-
 
         <ListView
             android:id="@+id/listView"

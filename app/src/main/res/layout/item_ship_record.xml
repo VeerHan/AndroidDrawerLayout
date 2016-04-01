@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--船况纪录-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_horizontal_margin">
+
+
+    <TextView
+        android:id="@+id/tv_name_zh"
+        style="@style/NormalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="东方之路" />
+
+
+    <TextView
+        android:id="@+id/tv_name_en"
+        style="@style/NormalGreyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_8"
+        android:layout_toRightOf="@id/tv_name_zh"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="EAST ROAD" />
+
+    <TextView
+        android:id="@+id/tv_country"
+        style="@style/SmallGreyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name_zh"
+        android:layout_marginTop="@dimen/margin_8"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="船籍:  中国" />
+
+    <TextView
+        android:id="@+id/tv_call_sign"
+        style="@style/SmallGreyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name_zh"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_toRightOf="@id/tv_country"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="呼号:  VRHV6" />
+
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/raw_go" />
+
+</RelativeLayout>

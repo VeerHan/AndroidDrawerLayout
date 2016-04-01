@@ -43,15 +43,15 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.inject(this);
 
         setSupportActionBar(toolbar);
-        getData();
         listView.setAdapter(adapter);
+        getData();
     }
 
 
     @Override
     public void onBackPressed() {
-        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            drawerLayout.closeDrawer(GravityCompat.START);
+        if (drawerLayout.isDrawerOpen(Gravity.RIGHT)) {
+            drawerLayout.closeDrawer(Gravity.RIGHT);
         } else {
             super.onBackPressed();
         }
